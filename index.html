@@ -15,12 +15,11 @@
 		<input type="submit" value="Submit">
 	</form>
 
-
 	<script type="text/javascript">
 		function validation()
 		{
 			var name = document.getElementById('name').value;
-			var email = document.getElementById('email');
+			var email = document.getElementById('email').value;
 			var pass = document.getElementById('pass').value;
 			var cpass = document.getElementById('cpass').value;
 			var mobile = document.getElementById('mobile').value;
@@ -30,7 +29,7 @@
 				alert("Plase enter name");
 				return false;
 			}
-			else if(!filter.test(email.value)){
+			else if(!filter.test(email)){
 				alert("Plase enter valid email");
 				return false;
 			}
@@ -61,13 +60,13 @@
 
 
 
-
-
-
-
 		}
 
 
+
+var d = new Date();
+var cd =d.getTime();
+document.write(cd);
 
 
 
